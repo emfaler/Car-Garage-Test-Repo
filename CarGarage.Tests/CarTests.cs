@@ -43,7 +43,7 @@ namespace CarGarage.Tests
 
             // Add a GetSpeed method to the Car class that returns the value of the Speed property
             // Uncomment the line below:
-            //Assert.Equal(27, car.GetSpeed());
+            Assert.Equal(27, car.GetSpeed());
         }
 
         [Fact]
@@ -63,8 +63,8 @@ namespace CarGarage.Tests
 
             // Add an Accelerate method to the Car class that increases Speed by 10 mph
             // Uncomment the line below:
-            // car.Accelerate();
-
+            //car.Accelerate();
+            
             Assert.Equal(10, car.Speed);
         }
 
@@ -75,7 +75,7 @@ namespace CarGarage.Tests
 
             // Modify the Accelerate method so that the car's Speed can never exceed 100 mph
             // Uncomment the line below:
-            // car.Accelerate();
+            //car.Accelerate();
 
             Assert.Equal(100, car.Speed);
         }
