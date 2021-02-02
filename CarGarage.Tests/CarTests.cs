@@ -53,7 +53,7 @@ namespace CarGarage.Tests
 
             // Add an IsSpeeding method to the Car class that returns true if the Speed property is greater than 70
             // Uncomment the line below:
-            // Assert.True(car.IsSpeeding());
+            Assert.True(car.IsSpeeding());
         }
 
         [Fact]
@@ -63,7 +63,7 @@ namespace CarGarage.Tests
 
             // Add an Accelerate method to the Car class that increases Speed by 10 mph
             // Uncomment the line below:
-            //car.Accelerate();
+            car.Accelerate();
             
             Assert.Equal(10, car.Speed);
         }
@@ -75,7 +75,7 @@ namespace CarGarage.Tests
 
             // Modify the Accelerate method so that the car's Speed can never exceed 100 mph
             // Uncomment the line below:
-            //car.Accelerate();
+            car.Accelerate();
 
             Assert.Equal(100, car.Speed);
         }
@@ -89,7 +89,7 @@ namespace CarGarage.Tests
             // Modify the Accelerate method so that the car's Speed increases by 20mph, but only if the
             // Make is "Ferrari"
             // Uncomment the line below:
-            // car.Accelerate();
+            car.Accelerate();
 
             Assert.Equal(20, car.Speed);
         }
@@ -101,7 +101,7 @@ namespace CarGarage.Tests
 
             // Add a Brake method to the Car class that decreases Speed by 7 mph
             // Uncomment the line below:
-            // car.Brake();
+            car.Brake();
 
             Assert.Equal(3, car.Speed);
         }
@@ -113,7 +113,7 @@ namespace CarGarage.Tests
 
             // Modify the Brake method so that the car's Speed can never go below 0 mph
             // Uncomment the line below:
-            // car.Brake();
+             car.Brake();
 
             Assert.Equal(0, car.Speed);
         }
