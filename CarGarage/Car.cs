@@ -66,10 +66,11 @@ namespace CarGarage
 
             public int Brake()
         {
+            bool autoBrake = Speed < 50;
 
-            if (Speed < 50)
+
+            if (autoBrake)
             {
-
                 Speed -= 7;
                 if (Speed >= 0)
                 {
@@ -80,14 +81,17 @@ namespace CarGarage
                     Speed += 6;
                     return Speed;
                 }
-
             }
-
             else
             {
-                Speed = Speed/2;
+                Speed = Speed / 2;
                 return Speed;
             }
+
+
+            }
+
+         
 
 
 
@@ -117,7 +121,7 @@ namespace CarGarage
     
     
     
-    }
+    
 
        
 
