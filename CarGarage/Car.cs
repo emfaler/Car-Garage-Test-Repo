@@ -66,23 +66,45 @@ namespace CarGarage
 
             public int Brake()
         {
-            Speed -= 7;
-            if (Speed >= 0)
+
+            if (Speed < 50)
             {
-                return Speed;
+
+                Speed -= 7;
+                if (Speed >= 0)
+                {
+                    return Speed;
+                }
+                else
+                {
+                    Speed += 6;
+                    return Speed;
+                }
+
             }
+
             else
             {
-                Speed += 6;
+                Speed = Speed/2;
+                return Speed;
             }
-               
-            return Speed;
+
+
+
+
+
+
+
+
         }
 
-                
 
-                    
-     }
+
+
+
+
+
+    }
 
 
 
